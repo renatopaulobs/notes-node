@@ -2,6 +2,7 @@ const fs = require('fs-extra');
 const packages = JSON.parse(fs.readFileSync('./package.json', 'utf-8'));
 const nodeModulesPath = './node_modules';
 const dependenciesPath = './dependencies';
+
 if (packages && packages.dependencies) {
     let installedDependencies = [];
     if (fs.existsSync(nodeModulesPath)) {
@@ -13,6 +14,7 @@ if (packages && packages.dependencies) {
                 console.log(`Copied dependency: ${dep}`);
             }
         }
+
     } else {
         console.log('Install dependencies first');
     }

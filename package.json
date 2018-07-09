@@ -9,7 +9,12 @@
   "author": "Renato",
   "license": "ISC",
   "dependencies": {
+    "fs-extra": "^6.0.1",
     "lodash": "^4.17.10",
-    "yargs": "^4.7.1"
+    "yargs": "^4.7.1",
+    "yarn": "^1.7.0"
+  },
+  "devDependencies": {
+    "licenses-list-generator": "^0.5.4"
   }
 }
