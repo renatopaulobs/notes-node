@@ -1,7 +1,9 @@
 const fs = require('fs-extra');
 const packages = JSON.parse(fs.readFileSync('./package.json', 'utf-8'));
-const projectPath = process.cwd();
+const projectPath = './';
 const licenses = [];
+var copyright = [];
+var licenseBody = [];
 
 //Getting License Info from nodemodule file
 const getLicenseInfo = (path) => {
@@ -9,10 +11,29 @@ const getLicenseInfo = (path) => {
   const license = licenseNames.find(name => fs.existsSync(`${path}/${name}`));
 
   if (!license) {
-    console.log('File license does not exist', path);
     return null;
   }
   return fs.readFileSync(`${path}/${license}`).toString();
+}
+
+//Getting Copyright from License Text
+const getCopyright = (path) => {
+  if(getLicenseInfo(path)) {
+      var numberOfCopy = 0;
+      var numberText = 0;
+      var allText = getLicenseInfo(path).split('\n');
+
+    for(var subText=0; subText<allText.length; subText++){
+      if(allText[subText].includes('Copyright')){
+        copyright[numberOfCopy] = allText[subText];
+        numberOfCopy++;    
+      } else {
+        licenseBody[numberText] = allText[subText];
+        numberText++;
+      }
+    }
+    return copyright.join('\n');
+  }
 }
 
 //Getting all licenses from package.json and listing
@@ -23,14 +44,17 @@ const getLicenses = (path = projectPath) => {
         licenses.push({
           name: name,
           path: `${path}/node_modules/${name}`,
-          text: getLicenseInfo(`${path}/node_modules/${name}`),
+          copyright: getCopyright(`${path}/node_modules/${name}`),
+          text: licenseBody.join('\n'),        
           type: packageJson.license || null,
           version: packageJson.version,
         });
     });
-  } 
-
+  }   
   return licenses;
 }
+
+//getCopyright(`${projectPath}/node_modules/body-parser`);
+//console.log(licenseBody.join('\n'))
 
 module.exports = () => getLicenses(projectPath);

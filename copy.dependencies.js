@@ -8,7 +8,7 @@ var typeLicense = 0;
 
 fs.writeFileSync('licenses-data.json', JSON.stringify(licenses, undefined, 2))
 
-//Copy dependencies from node_modules
+//Copy dependencies from node_modules to dependencies
 if (packages && packages.dependencies) {
     let installedDependencies = [];
     if (fs.existsSync(nodeModulesPath)) {
@@ -17,7 +17,7 @@ if (packages && packages.dependencies) {
         for (var dep in packages.dependencies) {
             if (installedDependencies.find(dir => dir === dep)) {
                 if(licenses[typeLicense].type === null){
-                    fs.copySync(`${nodeModulesPath}/${dep}`, `${dependenciesPath}/NoLicense/${dep}`);
+                    fs.copySync(`${nodeModulesPath}/${dep}`, `${dependenciesPath}/No License/${dep}`);
                     console.log(`Copied dependency: ${dep}`); 
                 }else {
                     fs.copySync(`${nodeModulesPath}/${dep}`, `${dependenciesPath}/${licenses[typeLicense].type}/${dep}`);
@@ -26,8 +26,9 @@ if (packages && packages.dependencies) {
                 typeLicense++;
             }
         }
-
-    } else {
+    }else {
         console.log('Install dependencies first');
     }
 }
+
+//Setting .about File
