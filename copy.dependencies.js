@@ -2,7 +2,13 @@ const fs = require('fs-extra');
 const packages = JSON.parse(fs.readFileSync('./package.json', 'utf-8'));
 const nodeModulesPath = './node_modules';
 const dependenciesPath = './dependencies';
+const licensesList = require('./dependecies-manager.js');
+const licenses = licensesList();
+var typeLicense = 0;
 
+fs.writeFileSync('licenses-data.json', JSON.stringify(licenses, undefined, 2))
+
+//Copy dependencies from node_modules
 if (packages && packages.dependencies) {
     let installedDependencies = [];
     if (fs.existsSync(nodeModulesPath)) {
@@ -10,8 +16,14 @@ if (packages && packages.dependencies) {
         fs.emptyDirSync(dependenciesPath);
         for (var dep in packages.dependencies) {
             if (installedDependencies.find(dir => dir === dep)) {
-                fs.copySync(`${nodeModulesPath}/${dep}`, `${dependenciesPath}/${dep}`);
-                console.log(`Copied dependency: ${dep}`);
+                if(licenses[typeLicense].type === null){
+                    fs.copySync(`${nodeModulesPath}/${dep}`, `${dependenciesPath}/NoLicense/${dep}`);
+                    console.log(`Copied dependency: ${dep}`); 
+                }else {
+                    fs.copySync(`${nodeModulesPath}/${dep}`, `${dependenciesPath}/${licenses[typeLicense].type}/${dep}`);
+                    console.log(`Copied dependency: ${dep}`);
+                }
+                typeLicense++;
             }
         }
 
