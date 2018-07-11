@@ -20,14 +20,14 @@ const getCopyright = (path) => {
   var copyright = [];
   licenseBody = [];
   if(getLicenseInfo(path)) {
-      var numberOfCopy = 0;
+      var numberCopy = 0;
       var numberText = 0;
       var allText = getLicenseInfo(path).split('\n');
 
     for(var subText=0; subText<allText.length; subText++){
       if(allText[subText].includes('Copyright')){
-        copyright[numberOfCopy] = allText[subText];
-        numberOfCopy++;    
+        copyright[numberCopy] = allText[subText];
+        numberCopy++;    
       } else {
         licenseBody[numberText] = allText[subText];
         numberText++;
@@ -54,8 +54,5 @@ const getLicenses = (path = projectPath) => {
   }   
   return licenses;
 }
-
-//getCopyright(`${projectPath}/node_modules/body-parser`);
-//console.log(licenseBody.join('\n'))
 
 module.exports = () => getLicenses(projectPath);

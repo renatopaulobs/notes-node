@@ -9,8 +9,7 @@ const solutionName = 'Solution - Microservice SC';
 const versionName = 'Version 00.01.00';
 var typeLicense = 0;
 
-fs.writeFileSync('licenses-data.json', JSON.stringify(licenses, undefined, 2))
-
+//fs.writeFileSync('licenses-data.json', JSON.stringify(licenses, undefined, 2))
 //Copy dependencies from node_modules to dependencies
 if (packages && packages.dependencies) {
     let installedDependencies = [];
