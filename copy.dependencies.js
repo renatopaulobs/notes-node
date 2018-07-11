@@ -46,7 +46,8 @@ if (fs.existsSync(dependenciesPath)) {
             for(var i=0; i<licenses.length; i++){
                 if(dep === licenses[i].name){
                     licenseBody = licenses[i].text;
-                    fs.appendFileSync(aboutFileName, `${licenses[i].name} v${licenses[i].version}\n${licenses[i].copyright}\n\n`)
+                    fs.appendFileSync(aboutFileName, `${licenses[i].name} v${licenses[i].version}\n${licenses[i].copyright}\n\n`);
+                    console.log(`Added dependency: ${dep}`);
                 }
             }
         });
