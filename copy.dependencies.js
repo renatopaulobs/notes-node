@@ -4,6 +4,9 @@ const nodeModulesPath = './node_modules';
 const dependenciesPath = './dependencies';
 const licensesList = require('./dependecies-manager.js');
 const licenses = licensesList();
+const aboutFileName = 'About_SC.txt';
+const solutionName = 'Solution - Microservice SC';
+const versionName = 'Version 00.01.00';
 var typeLicense = 0;
 
 fs.writeFileSync('licenses-data.json', JSON.stringify(licenses, undefined, 2))
@@ -31,4 +34,25 @@ if (packages && packages.dependencies) {
     }
 }
 
-//Setting .about File
+//Setting About file  
+if (fs.existsSync(dependenciesPath)) {
+    let groupDependencies = [];
+    groupDependencies = fs.readdirSync(dependenciesPath);
+    fs.writeFileSync(aboutFileName, `${solutionName}\n${versionName}\n\n`)
+    groupDependencies.forEach((name) => {
+        let licenseBody;
+        let insideDependencies = fs.readdirSync(`${dependenciesPath}/${name}`)
+        fs.appendFileSync(aboutFileName, `The following software may be included in this product:\n\n`)
+        insideDependencies.forEach((dep) => {
+            for(var i=0; i<licenses.length; i++){
+                if(dep === licenses[i].name){
+                    licenseBody = licenses[i].text;
+                    fs.appendFileSync(aboutFileName, `${licenses[i].name} v${licenses[i].version}\n${licenses[i].copyright}\n\n`)
+                }
+            }
+        });
+        fs.appendFileSync(aboutFileName, `${licenseBody}\n-----\n\n`)
+    });
+}else {
+    console.log('Unable to find dependencies path')
+}

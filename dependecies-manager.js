@@ -2,7 +2,6 @@ const fs = require('fs-extra');
 const packages = JSON.parse(fs.readFileSync('./package.json', 'utf-8'));
 const projectPath = './';
 const licenses = [];
-var copyright = [];
 var licenseBody = [];
 
 //Getting License Info from nodemodule file
@@ -18,6 +17,8 @@ const getLicenseInfo = (path) => {
 
 //Getting Copyright from License Text
 const getCopyright = (path) => {
+  var copyright = [];
+  licenseBody = [];
   if(getLicenseInfo(path)) {
       var numberOfCopy = 0;
       var numberText = 0;
