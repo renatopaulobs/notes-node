@@ -1,6 +1,7 @@
 const fs = require('fs-extra');
 const packages = JSON.parse(fs.readFileSync('./package.json', 'utf-8'));
 const projectPath = './';
+const libPath = './lib.js';
 const licenseNames = ['LICENSE.md', 'LICENSE', 'LICENSE-MIT', 'LICENCE', 'LICENSE.markdown', 'LICENSE.txt', 'LICENSE-MIT.txt'];
 const copyrightNames = ['Copyright (c)', 'Copyright (C)', 'Amazon.com, Inc. or its affiliates', 'Copyright Mathias Bynens'];
 const licenses = [];
@@ -61,5 +62,22 @@ const getLicenses = () => {
   }   
   return licenses;
 }
+/*
+  Dentro de getLicenses ler o lib.js, verificar se existe um package do array licenses[] 
+  com o nome igual aos que estão em lib.js. Caso haja algum que não esteja presente em licenses[]
+  dar um licenses.push com as informações do pacote novo.
 
+  Seguindo o raciocinio do parágrafo anterior, no caso de pacotes novos. Navegar até seu 
+  caminho e extrair nome, copyright e tipo de license.
+*/
+const getLib = () => {
+  if(fs.existsSync(libPath)){
+      var lib
+      lib = fs.readFileSync(libPath).toString().split('\n')
+  }
+  console.log(licenses)
+  console.log(lib)
+}
+getLicenses();
+getLib();
 module.exports = () => getLicenses();
