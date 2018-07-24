@@ -19,6 +19,9 @@ if (packages && packages.dependencies) {
         installedDependencies = fs.readdirSync(nodeModulesPath);
         fs.emptyDirSync(dependenciesPath);
         for (var dep in packages.dependencies) {
+            /*Tentar ler as dependencias nao mais do packages.dependencies
+            mas do licenses, pois dessa forma dará para mapear os packages
+            que foram lidos do arquivo lib.js*/
             if (installedDependencies.find(dir => dir === dep)) {
                 if(licenses[licenseNumber].type === null){
                     fs.copySync(`${nodeModulesPath}/${dep}`, `${dependenciesPath}/No License/${dep}`);

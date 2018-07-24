@@ -45,6 +45,45 @@ const getCopyright = (path) => {
     return copyright.join('\n');
   }
 }
+//Getting all library names from lib.js
+const getLibNames = () => {
+  const lib;
+  lib = fs.readFileSync(libPath).toString().split('require')
+  for(let i=0,j=1; j<lib.length; i++,j++) {
+    libNames[i] = lib[j].match("'(.*)'")[1]
+  }
+}
+/*Observar o metodo "installedDependencies.find" em copy.dependencies.
+  Verificar se é possível substituir algum "for" por ele.*/
+const getLibDependencies = () => {
+  if(fs.existsSync(libPath)){
+    var libNames = getLibNames();
+    var existsLicense;
+    const licLength = licenses.length
+             
+    libNames.forEach((name) => {
+      existsLicense = false
+        for(let i=0; i<licLength; i++) {
+          if(name === licenses[i].name){
+            existsLicense = true        
+          }
+        }
+        if(!existsLicense){
+          console.log(name)
+          packageJson = JSON.parse(fs.readFileSync(`${projectPath}/node_modules/${name}/package.json`).toString());
+          licenses.push({
+            name: name,
+            path: `${projectPath}/node_modules/${name}`,
+            copyright: getCopyright(`${projectPath}/node_modules/${name}`) || null,
+            text: licenseBody.join('\n'),
+            type: packageJson.license || null,
+            version: packageJson.version
+          });
+        }
+      });
+  }
+}
+
 //Getting all name licenses from package.json and their properties from node_modules
 const getLicenses = () => {
   if (packages) {
@@ -59,7 +98,9 @@ const getLicenses = () => {
           version: packageJson.version,
         });
     });
-  }   
+  }
+  getLibDependencies();
+
   return licenses;
 }
 /*
@@ -70,14 +111,6 @@ const getLicenses = () => {
   Seguindo o raciocinio do parágrafo anterior, no caso de pacotes novos. Navegar até seu 
   caminho e extrair nome, copyright e tipo de license.
 */
-const getLib = () => {
-  if(fs.existsSync(libPath)){
-      var lib
-      lib = fs.readFileSync(libPath).toString().split('\n')
-  }
-  console.log(licenses)
-  console.log(lib)
-}
+
 getLicenses();
-getLib();
 module.exports = () => getLicenses();
