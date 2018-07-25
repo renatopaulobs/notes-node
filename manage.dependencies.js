@@ -45,13 +45,28 @@ const getCopyright = (path) => {
     return copyright.join('\n');
   }
 }
+//Taking copyright info from extern files
+const getExternCopyright = (path) => {
+  let j=0;
+  var copyrightInfo = []
+  var text = fs.readFileSync(path).toString().split('\n')
+  for(let i=0; i<text.length; i++){
+    if(contains(text[i], copyrightNames)){
+      copyrightInfo[j] = text[i]
+      j++
+    }
+  }
+  return copyrightInfo.join('\n');
+}
 //Getting all library names from lib.js
 const getLibNames = () => {
-  const lib;
+  var lib;
+  var libNames = []
   lib = fs.readFileSync(libPath).toString().split('require')
   for(let i=0,j=1; j<lib.length; i++,j++) {
     libNames[i] = lib[j].match("'(.*)'")[1]
   }
+  return libNames;
 }
 /*Observar o metodo "installedDependencies.find" em copy.dependencies.
   Verificar se é possível substituir algum "for" por ele.*/
@@ -68,22 +83,21 @@ const getLibDependencies = () => {
             existsLicense = true        
           }
         }
-        if(!existsLicense){
-          console.log(name)
-          packageJson = JSON.parse(fs.readFileSync(`${projectPath}/node_modules/${name}/package.json`).toString());
+        if(!existsLicense && fs.existsSync(name)){
+          var title;
+          title = name.split('/')
           licenses.push({
-            name: name,
-            path: `${projectPath}/node_modules/${name}`,
-            copyright: getCopyright(`${projectPath}/node_modules/${name}`) || null,
-            text: licenseBody.join('\n'),
-            type: packageJson.license || null,
-            version: packageJson.version
+            name: title[title.length - 1],
+            path: `${name}`,
+            copyright: getExternCopyright(`${name}`) || null,
+            text: '',
+            type: 'external',
+            version: '1.0'
           });
         }
       });
   }
 }
-
 //Getting all name licenses from package.json and their properties from node_modules
 const getLicenses = () => {
   if (packages) {
@@ -103,14 +117,5 @@ const getLicenses = () => {
 
   return licenses;
 }
-/*
-  Dentro de getLicenses ler o lib.js, verificar se existe um package do array licenses[] 
-  com o nome igual aos que estão em lib.js. Caso haja algum que não esteja presente em licenses[]
-  dar um licenses.push com as informações do pacote novo.
-
-  Seguindo o raciocinio do parágrafo anterior, no caso de pacotes novos. Navegar até seu 
-  caminho e extrair nome, copyright e tipo de license.
-*/
-
-getLicenses();
+//console.log(getExternCopyright('./app/shared/opensource/quill.snow.css'));
 module.exports = () => getLicenses();
