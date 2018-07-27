@@ -1,0 +1,21 @@
+https://docs.gradle.org
+https://docs.gradle.org/current/userguide/inspecting_dependencies.html
+https://android.jlelse.eu/android-101-gradle-dependencies-9e2742b59f9
+https://stackoverflow.com/questions/21645071/using-gradle-to-find-dependency-tree (See- Project Reports Plugin)
+https://medium.com/@taman.neupane/manage-android-dependency-like-a-pro-e5fa2673ef52 (Creating Gradle Dependency Manager)
+
+Dependency management in gradle -
+    Is a technique for declaring, resolving and using dependencies required for the project.
+At runtime, gradle will locate the declared dependencies if needed for operating a specific task,
+the dependencies might need to be downloaded from a remote repository, retrieved from a local
+repository. This process is called dependency resolution. Modules can provide additional metadata.
+Metadata is the data that describes the module in more details: information about the repository,
+its authors.
+
+Dependency resolution -
+    Gradle takes your dependency declarations and repository definitions and attempts to do download 
+by a process called dependency resolution. 
+    - Given a required dependency.  
+    - Once each repository has been inspect for the module.
+    - All of the artifacts for the module are then requested from the same repository that was
+    chosen above.
