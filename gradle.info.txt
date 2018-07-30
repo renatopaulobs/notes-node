@@ -4,6 +4,10 @@ https://android.jlelse.eu/android-101-gradle-dependencies-9e2742b59f9
 https://stackoverflow.com/questions/21645071/using-gradle-to-find-dependency-tree (See- Project Reports Plugin)
 https://medium.com/@taman.neupane/manage-android-dependency-like-a-pro-e5fa2673ef52 (Creating Gradle Dependency Manager)
 
+https://www.raywenderlich.com/175940/gradle-build-script-tutorial-android-getting-started
+https://developer.android.com/studio/build/
+https://developer.android.com/studio/build/gradle-tips
+
 Dependency management in gradle -
     Is a technique for declaring, resolving and using dependencies required for the project.
 At runtime, gradle will locate the declared dependencies if needed for operating a specific task,
