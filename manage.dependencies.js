@@ -68,8 +68,7 @@ const getLibNames = () => {
   }
   return libNames;
 }
-/*Observar o metodo "installedDependencies.find" em copy.dependencies.
-  Verificar se é possível substituir algum "for" por ele.*/
+//Getting and setting values for dependencies from lib.js
 const getLibDependencies = () => {
   if(fs.existsSync(libPath)){
     var libNames = getLibNames();
@@ -113,9 +112,7 @@ const getLicenses = () => {
         });
     });
   }
-  getLibDependencies();
-
+  getLibDependencies()
   return licenses;
 }
-//console.log(getExternCopyright('./app/shared/opensource/quill.snow.css'));
 module.exports = () => getLicenses();
