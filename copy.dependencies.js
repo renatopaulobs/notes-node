@@ -10,7 +10,7 @@ const solutionName = 'Solution - Microservice SC';
 const versionName = 'Version 00.01.00';
 const headerInfo = `The following software may be included in this product:\n\n`;
 
-fs.writeFileSync('licenses-data.json', JSON.stringify(licenses, undefined, 2))
+//fs.writeFileSync('licenses-data.json', JSON.stringify(licenses, undefined, 2))
 //Copy dependencies from node_modules to dependencies
 if (packages && packages.dependencies) {
     var dep = [];
