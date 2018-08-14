@@ -1,0 +1,199 @@
+Directory - Sprint 3
+
+ux: https://xd.adobe.com/view/8aadc737-6641-47c9-7b18-6d6bd93c17ae-fc9c/
+ui: https://xd.adobe.com/view/9a4b1d0d-c668-45b6-66a3-904e64c0861e-ec7a/
+
+Sprint Stories:
+	FR_10.0 - Services Backend support APIs
+		5.1. As a service i want to be able to update the registration data of a specific user.
+			a. User/SC admin can edit its own email and name.
+		8.1. As a service i want to be able to request a login for specific user.
+			c. As a product owner i want the user account to be blocked in case of user tried
+			to enter with a wrong password 5x in a row.
+				i. I want the service to notify during the login process if the login account
+				was blocked.
+			d. If user entered with invalid password, as a product owner, i want the backend to 
+			retrieve the remaining attemps to login, so that the service client can notify the 
+			user that his/her account can be blocked.
+		9.1. As a service, i want to be able to request a logout for specific user.
+		10.1. As a service, i want to be able to request a code in order to reset my password.
+		11.1. As a service, i want to be able to request account unblock.
+		13.1. As a service, i want to be able to update a current password for a new password.
+			a. I want to be able to enter with my current password and the new password twice
+			to proceed with the password change.
+			b. As a product owner i want the password to be validated so that it follows the SDS 
+			security guide and the service to be notified if the entered password does not match the
+			requirements.	
+	FR_05.0 - SCs Management
+	?	3.10. As a Master, Samsung Admin, i want to be able to preview the owner signature (if owner signature was inserted).
+			a. As a Product Owner i want the file with owner signature must must be stored encrypted.
+	?	4.7. As a Master, Samsung Admin or SC Admin, i want to be able to preview the image of Owner Signature (if owner
+		signature was inserted).
+			a. As a Product Owner i want to prevent any admin to download the Owner Signature.
+			b. As a Product Owner i want the file with Owner signature must be stored encrypted.
+		6.1. As Master or Samsung Admin, i want to be able to remove a selected SC.
+		6.2. A Confirmation Dialog should be displayed.
+			a. If users and SC admin are associated, then there should be an alert to warn the admin that users and SC admins
+			associated to it will be removed as well.
+			b. If the SC admin is only associated to deleted SC, it will be removed as well.
+		6.3. Successful or Error messages to be dispayed.
+		7.1. As Master or Samsung admin, i want to be able to downlioad the list of SC and its registration data so that we can easily
+		manage the data on excel and apply any desired filter.
+		8.1. As Master or Samsung admin, I want to be able to associate/desassociate the service centers (SC) to existing services/solutions available such as QLess 		and Laudo Técnico for instance
+			b. As a product owner, I want the system to list only active SC.  
+		8.4. As admin, I want to have an option to search by a registered SC filtering the results by SC nickname and/or Locale (Address, City or State) so that it 		will be easier to find an specific assistance.   
+	FR_06.0 - User's Management
+		3.10. As a product owner, if no active SC exists, I want an alert to be displayed to the admin and suggest him to active an autorized service store first.
+		6.1. As admin, I want to be able to delete a selected user.
+		6.2. As a product owner, I want a confirmation message to be displayed to the admin.
+		7.1. As admin, I want to be able to download the list of users and their profile data.
+		7.2. As a product owner, I want the users list and profile data to be downloaded to a .csv file. Template: UsersReport.csv
+	FR_04.0 - Service Group Admins Management
+		1.1. As an admin (Samsung or SC) I want to see my profile (admin account) public info and have the option to edit it.
+		2.1. As an admin (Samsung or SC) I want to be able to edit my profile so that I can change my name, email and/or password.
+		2.3. I want the system to verify if the entered email is a valid email format.
+		2.4. As a product owner I want the admin to enter with current password and the new password (twice) in order to enable the password change.
+		2.5. As a product owner I want the system to verify if the new password follows the requirements (security guide).
+		2.6. As a product owner I want the system to check the mandatory and limit of chars for the input fields.
+		2.7. Successfull or error message must be displayed. 
+		3.1. As Master or Samsung Admin I want to be able to see the list of registered admin accounts so that I can verify the current accounts registered on the 		system in alphabetical order (admin name).
+		3.2. If exists more entries than supported to display, I want the list to be paginated.
+		3.3. As Master or Samsung Admin I want to have options to edit/remove other registered accounts as well as see an option to create a new account.
+		4.1. As Master or Samsung Admin I want to be able to search for a specific admin account, filtering the results by admin profile, login, admin name or a 		combination of both. 
+		4.2. Search should not be case sensitive.
+		4.3. Search results must be filtered following the input from admin.
+		4.4. If no results were found a friendly message must be displayed.
+		5.1. As a Master or Samsung Admin I want to be able to create a new admin account so that other people can help on the SC's administration.
+		5.2. As a product owner I want the mandatory fields to be validated and the user to be notified if any mandatory field was left empty. 
+name *
+login *
+email *
+profile *
+		5.3. As a product owner I want all new admin to be associated to an specific profile so that admin from SC's will be able to manage the data from associated SC. The supported profiles should be:
+Samsung Admin - represents an admin that represents Samsung on the service centers administration.
+SC Admin - represents an admin of one or a set of Service Centers.
+		5.4. As Master or Samsung Admin, I want to be able to search for SC names to associate to the new SC admin (only if Profile is set to SC Admin). More than one SC can be associated to the admin.
+		5.5. As a product owner, if no SC store exists, I want an alert to be displayed to the admin and suggest him to add a SC first.
+			a. As a product owner, I want the system to list only active SC.
+		5.6. As a product owner I want the system to check the limit of chars for the input fields.
+		5.7. As a product owner I want to restrict new accounts creation using an already registered login or email.
+		5.8. As a product owner I want the system automatically generated the new user password, following the security guidelines.
+		5.9. As a product owner I want the login data to be sent to the registered email.
+		5.10. Successful or error message must be displayed.
+		5.11. As a product owner, I want the email to be according to the following template:
+<admin_name>, bem vindo(a) ao portal de administradores do Samsung Service Center. 
+Abaixo estão os dados para acesso ao sistema:
+
+Login : <admin_login>
+
+Senha: <admin_password>
+
+ 
+
+Você poderá alterar essa senha no portal de administração.
+
+ 
+
+Equipe Samsung Service Center
+		5.12. As a product owner, if no active SC exists, I want an alert to be displayed to the admin and suggest him to active an autorized service store first.
+		6.1. As Master or Samsung Admin, I want to be able to edit other admins profile so that I can change the admin name.
+		6.2. As a product owner I want the system to check the limit of chars for the input fields and empty mandatory fields (name).
+		6.3. As a product owner I want the system to prevent the admin from modifing other admins login, email and password.
+		6.4. Successful or error message must be displayed.
+		6.5. As Master or Samsung Admin, I want to be able to search for SC names to associate to the SC admin (only if Profile is set to SC Admin). More than one SC can be associated to the admin.
+		6.6. As a product owner, I want the system to list only active SC.
+		6.7. As a product owner, if no active SC exists, I want an alert to be displayed to the admin and suggest him to active an autorized service store first.
+		7.1. As Master or Samsung Admin, I want to be able to delete my own or another a registered admin account.
+		7.2. A confirmation dialog should be displayed.
+		7.3. Successfull or error message must be displayed.
+			a. If the admin deleted its own account, the section must be terminated and user retrieved to the login page.
+	FR_01.0 - Admin Authentication
+		1.3. As a admin I want to login in the system if entered with the correct login and password or be notified if the login or password entered are invalid.
+			a. If user entered with invalid password, as a product owner, I want the backend to retrieve the remaining attempts to login, so that the service 			client can notify the user that his/her account will be blocked.
+		4.1. As a product owner I want the system to force the admin to change the password quarterly or less.
+		4.2. As admin I want to be notified (during login) that my password has expired and that I will need to change change my password so that I can determine a new 		password and guarantee the security.
+		4.3. As a Product owner I want the admin can receive the code to reset password in his email box.
+		4.4. As admin I want to be able to enter with the code received by email and with the new password twice to proceed with the password change.
+			a. If the code is expired a warning message should be displayed and the user should be asked for a new code.
+ 			b. If the code is invalid a error message should be displayed.
+		4.5. As a product owner I want to deny the access to the system unless the user redefine the password.
+		4.6. As a product owner I want the new password to be validated so that if follows the SDS security guide and the user to be notified if the entered password 		does not match the requirements.
+		5.1. As a admin I want to logout from Admin portal in case I am logged in so that I can end the current section
+		6.1. As admin, I want to have an option available to retrieve a login password in case I forgot my current password.
+		6.2. As admin, I want to be able to enter with my registered user so that I can receive on my email box a code to reset a password and recover the access to 		the system admin portal.
+			a. If the code is expired a warning message should be displayed and the user should be asked for a new code.
+			b. If the code is invalid a error message should be displayed.
+			c. If the user is invalid the recovery password screen should be displayed with an unreal email.
+		6.3. As a product owner, I want a notification to be displayed informing that the email was sent (even if the email/login was not sent because it does not 		exists in the database).
+		6.4. As a product owner, I want the email to be according to the following template:
+<admin_name>, esqueceu sua senha? Ou sua conta está bloqueada? Não tem problema. Abaixo está tudo o que você precisa para recuperar o seu acesso: 
+ 
+Código: <code to reset password> 
+ 
+Você poderá alterar esta senha informando este código no Portal de administrador.
+
+Equipe Samsung Service Group
+		7.1. As a product owner I want the admin account to be blocked in case the user tried to enter with wrong password 5x in a row.
+		7.3. As admin, I want to be able to enter with my registered user in order to receive the instructions to unlock my account.
+			a. If the user is invalid the recovery password screen should be displayed with an unreal email.
+		7.4. As a product owner, I want the email to be according the template mentioned on "Forgot password" item above.
+		8.1. As a admin I want to be able to unblock my account, by entering with the code to reset the password received by email in case it was blocked due to 		consecutive login error (5 wrong password in a row).
+		8.2. As a product owner I want the user and pw to be validated in order to proceed with the login or not.
+	FR_08.0 - Home Screen
+		3.1. As a admin, I want to see the available options/menus of features and services according to my user profile.
+		3.2. Possible available features:
+			a. Logout
+			b. Profile Management
+			c. Admin Management
+			d. Service Center Management
+			e. Users Management
+		3.3. Possibile available services (retrieved from database)
+			a. Technical Report
+			b. Qless (depends on admin type)
+				i. Only Samsung ADMIN and Master can access all services available (SC Admin can't access Qless).
+	FR_14.0 - Security
+		4.1. As a product owner, I want the user account to be locked in case the user tries to enter with wrong password repeated consecutively 5x in a row so that we 		can avoid unauthorized people of keeping trying to login by tentative-error.
+		4.2. As a product owner, I want the user to be notified during the login process if the login account was locked.
+		4.3. As a user, I want to have an option to unlock my account so that I can retrieve my access to the system.
+		6.1. As a product owner, I want to set to required users to reset their password during initial login or after receiving a code to reset password so the users 		determine their own password and guarantee the security.
+		6.2. As a product owner, I want the changing password functionality to include the code to reset password, the new password, and a password confirmation so that 		we can enforce the security.
+		6.3. As a product owner, I want to deny the access to the system unless the user redefine the password.
+		7.1. As a user, I want to have an option for recovering my access in case I forgot my password so that I can have access to the system again.
+		7.2. As a user, I want the recovery process to be automated to prevent internal users from access when personnel information(ID/Password) is lost, in this case you may adopt one of the following options:
+			a. a forget password email is sent to the user and it contain a reset link with a token which is valid for a limited amount of time.
+			b. If it's first login, the system generates a random password (simple password shall not be used) and send to the user to be used temporarily.
+		8.1. As a product owner, I want the system to use session authentication method (not cookie) and the session to be expired after 30 60 minutes and to be automatically renewed so that we protect the mailicius users to keep access to the system information.
+			a. If use of cookie authentication is mandatory, then it must transport in encrypted state. Not the plain text.
+			b. Set the cookie expire time as short as possible, and set cookie value do not caching.
+		8.2. As a product owner, I want the system to automatic log off the user when it is not used for more than 60 min.
+		10.1. As a product owner, I want the screens that has password fields to not echo the user’s password when it is entered so we keep the password privacy.
+		10.2. As a product owner, I want the password validation to meet the requirements below:
+			a. Three combination of "letters, numbers, special characters" with eight digits and/or greater.
+			? Type of character : Upper case(26 unit), Lower case(26 unit), Special Character(32 unit30 unit), Number(10 unit)
+			b. Prohibit passwords that are identical or includes user accounts
+			c. Prohibit passwords using sequenced characters and/or numbers (4 digits or more).
+			d. Prohibit passwords including company / personal information (user name, company name,
+		10.3. As a product owner, I want a successful or warning message about using the personal information in password or password that similar with ID is applied 		when create or modify the password.
+		12.1. As a user, I want to have an option to logout in case I am logged in so that I can end the current session.
+	NFR_13.0 - Security
+	NFR_14.0 - Backend APIs
+	NFR_15.0 - Web Admin
+
+CRs, Bugs, Improvements:
+	1)Imp - Add a confirmantion dialog when admin press "Cancelar" in "Associar Serviços"
+	2)Imp - serviceCenterId need to inform the lastupdate
+	3)Update Login Screen
+	4)Bug - Blank square should be removed in SC Edition 
+	5)Bug - Unable to use updatePassword with paramenters describe in API Spec
+	6)Include popup to remove signature of ASC responsible
+	7)Please change the password requirements text - 1st login
+	8)Imp - Change the login error message
+	9)Rename application name from "SC Directory Admin" to "SC Admin"
+	10)SC Search only consider the beginning of the word during the user creation
+	11)Bug - updatePassword does not require ASCId parameter 
+	12)City Search only consider the beginning of the word during the SC creation
+
+Tasks: 
+	4)Use CloudFormation to setup the environment
+	5)Analize UFPE AWS account
+	6)Review best Pratices for Working with AWS Lambda Functions 

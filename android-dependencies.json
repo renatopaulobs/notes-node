@@ -1,0 +1,337 @@
+[
+  {
+    "name": "android-image-cropper-2.7.0.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/android-image-cropper-2.7.0.aar",
+    "copyright": null
+  },
+  {
+    "name": "animated-vector-drawable-27.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/animated-vector-drawable-27.1.1.aar",
+    "copyright": "   Copyright (C) 2015 The Android Open Source Project"
+  },
+  {
+    "name": "anko-0.10.5.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/anko-0.10.5.jar",
+    "copyright": null
+  },
+  {
+    "name": "anko-appcompat-v7-0.10.5.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/anko-appcompat-v7-0.10.5.jar",
+    "copyright": null
+  },
+  {
+    "name": "anko-appcompat-v7-commons-0.10.5.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/anko-appcompat-v7-commons-0.10.5.jar",
+    "copyright": null
+  },
+  {
+    "name": "anko-appcompat-v7-coroutines-0.10.5.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/anko-appcompat-v7-coroutines-0.10.5.jar",
+    "copyright": null
+  },
+  {
+    "name": "anko-commons-0.10.5.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/anko-commons-0.10.5.jar",
+    "copyright": null
+  },
+  {
+    "name": "anko-coroutines-0.10.5.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/anko-coroutines-0.10.5.jar",
+    "copyright": null
+  },
+  {
+    "name": "anko-design-0.10.5.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/anko-design-0.10.5.jar",
+    "copyright": null
+  },
+  {
+    "name": "anko-sdk25-0.10.5.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/anko-sdk25-0.10.5.jar",
+    "copyright": null
+  },
+  {
+    "name": "anko-sdk25-coroutines-0.10.5.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/anko-sdk25-coroutines-0.10.5.jar",
+    "copyright": null
+  },
+  {
+    "name": "anko-sqlite-0.10.5.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/anko-sqlite-0.10.5.jar",
+    "copyright": null
+  },
+  {
+    "name": "anko-support-v4-0.10.5.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/anko-support-v4-0.10.5.jar",
+    "copyright": null
+  },
+  {
+    "name": "anko-support-v4-commons-0.10.5.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/anko-support-v4-commons-0.10.5.jar",
+    "copyright": null
+  },
+  {
+    "name": "annotations-13.0.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/annotations-13.0.jar",
+    "copyright": null
+  },
+  {
+    "name": "appcompat-v7-27.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/appcompat-v7-27.1.1.aar",
+    "copyright": " Copyright (C) 2012 The Android Open Source Project"
+  },
+  {
+    "name": "cardview-v7-27.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/cardview-v7-27.1.1.aar",
+    "copyright": " Copyright (C) 2014 The Android Open Source Project"
+  },
+  {
+    "name": "common-1.1.0.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/common-1.1.0.jar",
+    "copyright": null
+  },
+  {
+    "name": "common-1.1.1.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/common-1.1.1.jar",
+    "copyright": null
+  },
+  {
+    "name": "commons-beanutils-1.9.2.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/commons-beanutils-1.9.2.jar",
+    "copyright": null
+  },
+  {
+    "name": "commons-cli-1.2.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/commons-cli-1.2.jar",
+    "copyright": null
+  },
+  {
+    "name": "commons-collections-3.2.2.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/commons-collections-3.2.2.jar",
+    "copyright": null
+  },
+  {
+    "name": "commons-digester-1.8.1.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/commons-digester-1.8.1.jar",
+    "copyright": null
+  },
+  {
+    "name": "commons-io-2.6.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/commons-io-2.6.jar",
+    "copyright": null
+  },
+  {
+    "name": "commons-lang3-3.7.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/commons-lang3-3.7.jar",
+    "copyright": null
+  },
+  {
+    "name": "commons-logging-1.2.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/commons-logging-1.2.jar",
+    "copyright": null
+  },
+  {
+    "name": "commons-validator-1.5.0.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/commons-validator-1.5.0.jar",
+    "copyright": null
+  },
+  {
+    "name": "constraint-layout-1.1.0.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/constraint-layout-1.1.0.aar",
+    "copyright": null
+  },
+  {
+    "name": "constraint-layout-solver-1.1.0.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/constraint-layout-solver-1.1.0.jar",
+    "copyright": null
+  },
+  {
+    "name": "converter-moshi-2.4.0.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/converter-moshi-2.4.0.jar",
+    "copyright": null
+  },
+  {
+    "name": "db-1.1.0.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/db-1.1.0.aar",
+    "copyright": "  ~ Copyright (C) 2016 The Android Open Source Project"
+  },
+  {
+    "name": "db-framework-1.1.0.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/db-framework-1.1.0.aar",
+    "copyright": "  ~ Copyright (C) 2016 The Android Open Source Project"
+  },
+  {
+    "name": "design-27.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/design-27.1.1.aar",
+    "copyright": " Copyright (C) 2015 The Android Open Source Project"
+  },
+  {
+    "name": "exifinterface-27.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/exifinterface-27.1.1.aar",
+    "copyright": " Copyright (C) 2015 The Android Open Source Project"
+  },
+  {
+    "name": "extensions-1.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/extensions-1.1.1.aar",
+    "copyright": "  ~ Copyright (C) 2016 The Android Open Source Project"
+  },
+  {
+    "name": "httpcore-4.4.9.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/httpcore-4.4.9.jar",
+    "copyright": null
+  },
+  {
+    "name": "jsr305-2.0.1.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/jsr305-2.0.1.jar",
+    "copyright": null
+  },
+  {
+    "name": "kotlin-stdlib-1.2.51.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/kotlin-stdlib-1.2.51.jar",
+    "copyright": null
+  },
+  {
+    "name": "kotlin-stdlib-common-1.2.51.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/kotlin-stdlib-common-1.2.51.jar",
+    "copyright": null
+  },
+  {
+    "name": "kotlin-stdlib-jdk7-1.2.51.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/kotlin-stdlib-jdk7-1.2.51.jar",
+    "copyright": null
+  },
+  {
+    "name": "kotlinx-coroutines-android-0.15.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/kotlinx-coroutines-android-0.15.jar",
+    "copyright": null
+  },
+  {
+    "name": "kotlinx-coroutines-core-0.15.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/kotlinx-coroutines-core-0.15.jar",
+    "copyright": null
+  },
+  {
+    "name": "libphonenumber-8.0.1.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/libphonenumber-8.0.1.jar",
+    "copyright": null
+  },
+  {
+    "name": "livedata-1.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/livedata-1.1.1.aar",
+    "copyright": "  ~ Copyright 2017 The Android Open Source Project"
+  },
+  {
+    "name": "livedata-core-1.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/livedata-core-1.1.1.aar",
+    "copyright": "  ~ Copyright 2017 The Android Open Source Project"
+  },
+  {
+    "name": "material-spinner-2.0.0.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/material-spinner-2.0.0.aar",
+    "copyright": null
+  },
+  {
+    "name": "moshi-1.6.0.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/moshi-1.6.0.jar",
+    "copyright": null
+  },
+  {
+    "name": "okhttp-3.10.0.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/okhttp-3.10.0.jar",
+    "copyright": null
+  },
+  {
+    "name": "okio-1.14.0.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/okio-1.14.0.jar",
+    "copyright": null
+  },
+  {
+    "name": "picasso-2.71828.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/picasso-2.71828.aar",
+    "copyright": null
+  },
+  {
+    "name": "recyclerview-v7-27.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/recyclerview-v7-27.1.1.aar",
+    "copyright": " Copyright (C) 2013 The Android Open Source Project"
+  },
+  {
+    "name": "retrofit-2.4.0.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/retrofit-2.4.0.jar",
+    "copyright": null
+  },
+  {
+    "name": "runtime-1.1.0.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/runtime-1.1.0.aar",
+    "copyright": "  ~ Copyright (C) 2016 The Android Open Source Project"
+  },
+  {
+    "name": "runtime-1.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/runtime-1.1.1.aar",
+    "copyright": "  ~ Copyright (C) 2016 The Android Open Source Project"
+  },
+  {
+    "name": "signature-view-1.2.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/signature-view-1.2.aar",
+    "copyright": null
+  },
+  {
+    "name": "stetho-1.5.0.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/stetho-1.5.0.aar",
+    "copyright": null
+  },
+  {
+    "name": "support-annotations-27.1.1.jar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/support-annotations-27.1.1.jar",
+    "copyright": null
+  },
+  {
+    "name": "support-compat-27.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/support-compat-27.1.1.aar",
+    "copyright": " Copyright (C) 2014 The Android Open Source Project"
+  },
+  {
+    "name": "support-core-ui-27.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/support-core-ui-27.1.1.aar",
+    "copyright": " Copyright (C) 2014 The Android Open Source Project"
+  },
+  {
+    "name": "support-core-utils-27.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/support-core-utils-27.1.1.aar",
+    "copyright": " Copyright (C) 2014 The Android Open Source Project"
+  },
+  {
+    "name": "support-fragment-27.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/support-fragment-27.1.1.aar",
+    "copyright": " Copyright (C) 2014 The Android Open Source Project"
+  },
+  {
+    "name": "support-media-compat-27.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/support-media-compat-27.1.1.aar",
+    "copyright": " Copyright (C) 2014 The Android Open Source Project"
+  },
+  {
+    "name": "support-v4-27.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/support-v4-27.1.1.aar",
+    "copyright": " Copyright (C) 2014 The Android Open Source Project"
+  },
+  {
+    "name": "support-vector-drawable-27.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/support-vector-drawable-27.1.1.aar",
+    "copyright": "   Copyright (C) 2015 The Android Open Source Project"
+  },
+  {
+    "name": "transition-27.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/transition-27.1.1.aar",
+    "copyright": " Copyright (C) 2016 The Android Open Source Project"
+  },
+  {
+    "name": "verticalseekbar-0.7.2.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/verticalseekbar-0.7.2.aar",
+    "copyright": "       Copyright (C) 2015 Haruki Hasegawa"
+  },
+  {
+    "name": "viewmodel-1.1.1.aar",
+    "path": "C:/Paulo.Renato/Projects/Technical Report/ls-sw2-technical-report/Implementation/Mobile/Android/app/build/generated/unzip/viewmodel-1.1.1.aar",
+    "copyright": "  ~ Copyright 2017 The Android Open Source Project"
+  }
+]
